@@ -4,66 +4,24 @@
 
 	Linux系统 ：所有版本系统;   环境：apache+php 或 Nginx+php
 
-        PHP版本：支持所有的PHP版本运行
+        PHP版本：支持5.3-7.2版本运行
 
 	最低配置1G内存、单核cpu，几十个G的硬盘空间
 
 一、前期准备
 
-	第①步：设置链轮域名
-
-	public\domains\  放上要链轮的域名 一行一个
-
-
-	第②步 客户资料
-                   public\info \客户  目录下为客户资料，随机获取客户资料
-                                              webname      网站名称，一行一个，如：行业知名网站名称等，每个文档控制在300K以内。
-                                              keywords     客户关键词，一行一个，每个文档控制在300K以内。
-                    每个客户的资料里面---->   description  网站描述，一行一个，每个文档控制在300K以内。
-                                              jump         跳转js，不限文件个数，随便命名，随机调用。
-        第③步：模板文件
-                   template目录下
-                              index          首页模板，不限文件个数，随便命名，随机调用。
-                              article        内页模板，不限文件个数，随便命名，随机调用。
-                              map            网站地图，不限文件个数，随便命名，随机调用。
-
-	第④步：准备外推关键词、外推地址
-
-             提示：以下可选择做，或者忽略做
-	           public\waituikeywords\ 目录下准备(编码外推关键词)，名称随意，一个文档 300K以内。
-	           public\waituikeywords2\ 目录下准备(编码外推关键词)，名称随意，一个文档 300K以内。
-                   public\waituiurl\ 目录下准备(外推地址，即为各大知名网站的搜索地址，默认自带了一些，有需要可以自己额外添加)，名称随意，一个文档 300K以内。
-                   public\tesuwaituiurl\ 目录下准备(外推地址，即为各大知名网站的搜索地址，默认自带了一些，有需要可以自己额外添加)，名称随意，一个文档 300K以内。
-
-
-	第⑤步 更换站点统计 tj.js文件在根目录下，支持任何统计代码
-
-	第⑥步 添加姓名
-        public\fullname\	  将姓名称加到这里，一行一个（默认上千个姓名，觉得够了可忽略此步骤）
-
-
-	第⑦步 更换原创库
+	第①步 更换原创库
 
 	将制作好的原创库文件放到 public\juzi 目录下 文档名称随意，一个文档 300K以内。
         可以直接网上下载一部小说放进去就可以。
 
-        第⑧步附加：友情链接蜘蛛池
+        第②步附加：友情链接蜘蛛池
 
         public\friendlink\  将需要被收录的超文本加到这里，名称随意，一行一条，一个文档 300K以内。
                               格式：<a href="http://www.baidu.com">百度</a>
        
-        第⑨步：短网址生成，运行 根目录下的  dwz.php文件，根据提示操作进行生成
+        第③步：若要做短网址，短网址生成，运行 根目录下的  dwz.php文件，根据提示操作进行生成
 
-        第⑩：模板规则配置；在/rule/
-                                       title.txt         网站标题标签规则配置 
-                                       linktitle.txt     链接标题标签规则配置
-                                       description.txt   meta标签description描述规则设置
-                                       keywords.txt      meta标签keywords关键字规则设置
-                                       url.txt           全站URL重写规则设置
-                                       bodyarticle.txt   网站内容标签规则配置
-                                       side.txt          汉字干扰字符设置
-                                       interfere.txt     网页源代码干扰码设置
-                                       preg_replace.txt  页面内容指定替换									   
  
         扩展可选项：
               若需要用采集文章和新闻标题的方式；打开浏览器 访问 http://域名/caiji/caiji.html地址即可
@@ -71,25 +29,13 @@
               采集临时模板；打开浏览器 运行 http://域名/caiji/getmuban.html地址即可
               制作模板；打开浏览器 运行 http://域名/caiji/makemuban.html地址即可
 
-二、网站搭建
-
-	★Win服务器:
-
-	第①步：iis新建站点，绑定域名那里，不填写
-
-	第②步：设置主页，只要index.php即可
-	
-	第③步：设置网日志存放目录，如果不看日志，可以不用选
-
-三、域名解析
-
-	www.dnspod.cn注册一个帐号，需要手机验证，否正无法正常解析，DNSPOD批量解析工具解析站群域名。
+二、域名解析
 
 	域名解析需做泛解析，即解析的时候 填写 * 号
 
 	如douxia.win泛解析为 *.douxia.win
 
-四、目录说明
+三、目录说明
         /caiji/                 采集插件目录
         /rule/                  模板制作规则配置，标签自由组合
                     title.txt       模板制作，网站标题标签规则配置
@@ -98,6 +44,7 @@
                     keywords.txt    模板制作，meta标签keywords规则设置
                     url.txt         模板制作，全站URL重写规则设置
                     bodyarticle.txt   网站内容标签规则配置
+                    one-to-one-template.txt    一对一模板规则设置
                     side.txt          汉字干扰字符设置 
                     interfere.txt     网页源代码干扰码设置
                     preg_replace.txt  页面内容指定替换
@@ -142,9 +89,9 @@
                     每个客户的模板里面---->   description  网站描述，一行一个，每个文档控制在300K以内。
                                               jump         跳转js，不限文件个数，随便命名，随机调用。
                
-          template/index/       首页模板，不限文件个数，随便命名，随机调用。
-                  /article/     内页模板，不限文件个数，随便命名，随机调用。
-                  /map/         网站地图，不限文件个数，随便命名，随机调用。
+          template/private_muban/    一对一模板，不限文件个数，随便命名，随机调用。
+                  /public_muban/     公用模板，不限文件个数，随便命名，随机调用。
+                  /map/              网站地图，不限文件个数，随便命名，随机调用。
 
 	 /pics/			图片目录，随机调用图片
 	 /static/		所有模版的图片、css、js文件放到这里
