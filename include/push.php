@@ -3,9 +3,9 @@
 /**********************************函数解释*********************************************************
 
 当前域名：$_SERVER['HTTP_HOST']
-当前主域名：nhgtu76fs8ulqh6n()
-随机数字：momifw0u9p_gv_4w(6)   6为长度，长度可自定义
-随机字符：ou4f9ioz1iatpqkl(5)   5为长度，长度可自定义
+当前主域名：wy_xfyrqth18jv0v()
+随机数字：ibjrr2cmetmadorx(6)   6为长度，长度可自定义
+随机字符：exqgxdhglrozv9no(5)   5为长度，长度可自定义
 
 ****************************************************************************************************/
 
@@ -13,10 +13,10 @@ $urls = array(
 
 /*以下是推送的URL地址，默认推送4条，可自定义增加或删减*/
 
-    'http://'.$_SERVER['HTTP_HOST'].'/'.ou4f9ioz1iatpqkl(5),
-    'http://'.$_SERVER['HTTP_HOST'].'/'.ou4f9ioz1iatpqkl(5).'/'.momifw0u9p_gv_4w(6).'.html',
-    'http://'.$_SERVER['HTTP_HOST'].'/'.ou4f9ioz1iatpqkl(5).'/'.ou4f9ioz1iatpqkl(5).'.html',
-    'http://'.$_SERVER['HTTP_HOST'].'/'.ou4f9ioz1iatpqkl(5).'/'.ou4f9ioz1iatpqkl(5)
+    'http://'.$_SERVER['HTTP_HOST'].'/'.exqgxdhglrozv9no(5),
+    'http://'.$_SERVER['HTTP_HOST'].'/'.exqgxdhglrozv9no(5).'/'.ibjrr2cmetmadorx(6).'.html',
+    'http://'.$_SERVER['HTTP_HOST'].'/'.exqgxdhglrozv9no(5).'/'.exqgxdhglrozv9no(5).'.html',
+    'http://'.$_SERVER['HTTP_HOST'].'/'.exqgxdhglrozv9no(5).'/'.exqgxdhglrozv9no(5)
 	
 /*以上是推送的URL地址，默认推送4条，可自定义增加或删减*/
 	
