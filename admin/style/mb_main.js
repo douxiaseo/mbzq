@@ -23,6 +23,7 @@ document.getElementById('adduser').style.display="none";
 document.getElementById('deluser').style.display="none";
 document.getElementById('domains').style.display="none";
 document.getElementById('cache').style.display="none";
+document.getElementById('agent').style.display="none";
 document.getElementById('jump').style.display="none";
 document.getElementById('tongji').style.display="none";
 document.getElementById('maganrao').style.display="none";
@@ -104,6 +105,9 @@ function domains(){
 function cache(){
 	document.getElementById('cache').style.display="";
 }
+function agent(){
+	document.getElementById('agent').style.display="";
+}
 function jump(){
 	document.getElementById('jump').style.display="";
 }
@@ -148,6 +152,7 @@ function hidder(){
 	document.getElementById('deluser').style.display="none";
 	document.getElementById('domains').style.display="none";
 	document.getElementById('cache').style.display="none";
+	document.getElementById('agent').style.display="none";
 	document.getElementById('jump').style.display="none";
 	document.getElementById('tongji').style.display="none";
 	document.getElementById('maganrao').style.display="none";
