@@ -4,7 +4,7 @@
 
 	Linux系统 ：所有版本系统;   环境：apache+php 或 Nginx+php
 
-        PHP版本：支持5.3-7.2版本运行
+        PHP版本：支持所有的PHP版本运行
 
 	最低配置1G内存、单核cpu，几十个G的硬盘空间
 
@@ -54,6 +54,7 @@
         /public/push-open-close.txt     蜘蛛推送开启与关闭：on为开启推送；off为关闭推送
         /public/friendlink-open-close.txt   友情链接蜘蛛池开启与关闭：on为开启蜘蛛池；off为关闭蜘蛛池
         /public/tongji-open-close.txt   统计开启与关闭：on为开启统计；off为关闭统计
+        /public/www-open-close.txt      主域名301跳转至www站点开启与关闭：on为开启301跳转；off为关闭301跳转
         /public/baiduspider-open-close.txt  百度蜘蛛来访缓存开启与关闭：Baidu为开启；off为关闭
         /public/360spider-open-close.txt    360蜘蛛来访缓存开启与关闭： 360为开启；off为关闭
         /public/sogouspider-open-close.txt  搜狗蜘蛛来访缓存开启与关闭：Sogou为开启；off为关闭
